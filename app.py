@@ -14,7 +14,7 @@ def getInfoMachine():
         "processRun": str(procesos),
     }
     
-    r = requests.post(urlApi, data=payload, headers= {'content-type': 'application/json'})
+    r = requests.post(urlApi, json=payload, headers= {'content-type': 'application/json'})
     if(r.status_code == requests.codes.ok):
         print(r.json())
     else:

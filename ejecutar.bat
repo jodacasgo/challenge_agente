@@ -1,1 +1,1 @@
-python ejecutar.py
+python app.py
